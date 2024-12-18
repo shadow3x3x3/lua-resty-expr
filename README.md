@@ -104,7 +104,7 @@ Each expression is an array table which has three or four elements:
 |`<`       |less than  |`["arg_ttl", "<", 3600]`|
 |`<=`      |less than or equal to|`["arg_ttl", "<=", 3600]`|
 |`~~`      |match [RegEx](https://www.pcre.org)|`["arg_env", "~~", "[Dd]ev"]`|
-|`~*`      |match [RegEx](https://www.pcre.org) (case-insensitive) |`["arg_env", "~~", "dev"]`|
+|`~*`      |match [RegEx](https://www.pcre.org) (case-insensitive) |`["arg_env", "~*", "dev"]`|
 |`in`      |exist in the right-hand side|`["arg_version", "in", ["v1","v2"]]`|
 |`has`     |contain item in the right-hand side|`["graphql_root_fields", "has", "owner"]`|
 |`!`       |reverse the adjacent operator|`["arg_env", "!", "~~", "[Dd]ev"]`|
